@@ -8,6 +8,15 @@ PyPTO3 Toolkit 是一款 PyPTO 3.0 框架全流程辅助工具，提供包括编
 
 v1.0.2 Release 列出了插件源码提交和已检查的 `simpler` runtime 提交。使用其他提交生成的运行数据前，请查看[安装与兼容性说明](docs/zh/getting-started/install.md)。本仓库存放文档和 Release 附件；GitHub 自动生成的源码压缩包并不是插件源码。
 
+## 本仓库发布的产品
+
+本仓库发布两个相互独立的产品，各自使用独立的 tag 前缀。请在 [Release 列表](https://github.com/hw-native-sys/pypto-tools/releases) 中按前缀筛选，以找到某个产品的最新安装包。
+
+| 产品 | Tag 前缀 | 附件 | 文档 |
+|---|---|---|---|
+| PyPTO3 Toolkit 插件 | `v*` | VSIX | [用户文档](./docs/zh/index.md) |
+| 任务队列（`task-submit`） | `task-submit-v*` | `task-submit-<version>.tar.gz` 和 `.sha256` | [任务队列文档](./docs/zh/task-queue/index.md) |
+
 ## 核心特性
 ### chip级任务记录：
 

@@ -8,6 +8,15 @@ PyPTO3 Toolkit is an end-to-end development extension for the PyPTO 3.0 framewor
 
 The v1.0.2 Release lists its extension source commit and checked `simpler` runtime commits. See the [installation and compatibility notes](docs/en/getting-started/install.md) before using that VSIX with runtime data from another revision. This repository contains documentation and Release assets; the automatically generated GitHub source archives are not the extension source.
 
+## What This Repository Distributes
+
+This repository publishes two independent products, each on its own tag prefix. Filter the [release list](https://github.com/hw-native-sys/pypto-tools/releases) by prefix to find the latest package for a product.
+
+| Product | Tag prefix | Asset | Documentation |
+|---|---|---|---|
+| PyPTO3 Toolkit extension | `v*` | VSIX | [User guide](./docs/en/index.md) |
+| Task Queue (`task-submit`) | `task-submit-v*` | `task-submit-<version>.tar.gz` and `.sha256` | [Task Queue docs](./docs/en/task-queue/index.md) |
+
 ## Key Features
 
 ### Chip-level Task Records

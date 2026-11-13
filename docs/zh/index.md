@@ -29,6 +29,10 @@ PyPTO3 Toolkit v1.0.0 是面向 PyPTO 算子开发者的 VS Code 插件。本说
 >
 > 本文只介绍 PyPTO 3.0 已接通并可供用户使用的功能。
 
+## 相关工具
+
+[任务队列（task-submit）](task-queue/index.md) 由本仓库独立发布，用于在共享 Ascend 主机上提交和运行 NPU 任务，不属于本插件。
+
 ## 反馈
 
 如遇到问题，请在 [hw-native-sys/pypto-tools Issues](https://github.com/hw-native-sys/pypto-tools/issues) 中提交问题，并尽量附上插件版本、输入文件类型、复现步骤和错误信息。使用插件前请阅读仓库 [中文 README 中的免责声明](https://github.com/hw-native-sys/pypto-tools/blob/main/README.zh.md#免责声明)。

@@ -1,7 +1,7 @@
 INHERIT: .site-theme/docs-theme/base.yml
 
 site_name: PyPTO Toolkit
-site_description: User documentation for the PyPTO 3.0 IDE extension
+site_description: User documentation for the PyPTO 3.0 IDE extension and Task Queue
 site_url: https://www.pypto.ai/pypto-tools/
 
 repo_url: https://github.com/hw-native-sys/pypto-tools
@@ -51,6 +51,10 @@ plugins:
             Function Performance: 函数性能表
             Compiler Analysis: 编译分析
             Memory Reuse Analysis: 内存复用分析
+            Task Queue: 任务队列
+            Overview: 概览
+            Install and Upgrade: 安装与升级
+            Basic Usage: 基本使用
 
 markdown_extensions:
   - attr_list
@@ -87,3 +91,7 @@ nav:
   - Compiler Analysis:
       - IR Pass Trace: compiler/ir-pass-trace.md
       - Memory Reuse Analysis: compiler/memory-reuse.md
+  - Task Queue:
+      - Overview: task-queue/index.md
+      - Install and Upgrade: task-queue/install.md
+      - Basic Usage: task-queue/usage.md
