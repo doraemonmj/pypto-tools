@@ -18,7 +18,7 @@ PyPTO3 Toolkit v1.0.0 是面向 PyPTO 算子开发者的 VS Code 插件。本说
 
 ## 推荐分析顺序
 
-1. 从最新 [GitHub Release](https://github.com/hw-native-sys/pypto-tools/releases/latest) 下载并安装 VSIX。
+1. 从 [GitHub Releases](https://github.com/hw-native-sys/pypto-tools/releases) 中 tag 以 `v` 开头的最新 Release 下载并安装 VSIX。
 2. 将 PyPTO 3.0 运行生成的 `dfx_outputs` 和 `passes_dump*` 保留在 VS Code 工作区内。
 3. 先打开 `chip_swimlane_records.json` 定位耗时和调度阶段。
 4. 再打开同目录的 `deps.json` 检查任务依赖和冗余边。

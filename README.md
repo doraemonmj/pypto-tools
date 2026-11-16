@@ -1,21 +1,21 @@
-# PyPTO3 Toolkit Extension User Guide
+# pypto-tools
 
 English | [简体中文](README.zh.md)
 
+This repository holds the documentation and Release assets for two independent products. Each product has its own tag prefix; filter the [release list](https://github.com/hw-native-sys/pypto-tools/releases) by prefix to find its latest package.
+
+| Product | Purpose | Tag prefix | Asset | Documentation |
+|---|---|---|---|---|
+| PyPTO3 Toolkit | VS Code extension for PyPTO 3.0 runtime and compilation analysis | `v*` | VSIX | [User guide](./docs/en/toolkit/index.md) |
+| task-submit | NPU job queue for a shared Ascend host | `task-submit-v*` | `task-submit-<version>.tar.gz` and `.sha256` | [Documentation](./docs/en/task-submit/index.md) |
+
+## PyPTO3 Toolkit
+
 PyPTO3 Toolkit is an end-to-end development extension for the PyPTO 3.0 framework. It visualizes compilation and runtime states and provides operator development workflow capabilities, helping developers understand PyPTO 3.0 and improve operator development, debugging, and performance tuning efficiency.
 
-> For complete PyPTO 3.0 usage instructions, see the [PyPTO3 Toolkit documentation](https://www.pypto.ai/pypto-tools/). The documentation source is under [`docs/`](./docs/), and the latest extension package is available from [Releases](https://github.com/hw-native-sys/pypto-tools/releases/latest).
+> For complete PyPTO 3.0 usage instructions, see the [PyPTO3 Toolkit documentation](https://www.pypto.ai/pypto-tools/). The documentation source is under [`docs/en/toolkit/`](./docs/en/toolkit/), and extension packages are listed under the `v*` tag prefix in [Releases](https://github.com/hw-native-sys/pypto-tools/releases).
 
-The v1.0.2 Release lists its extension source commit and checked `simpler` runtime commits. See the [installation and compatibility notes](docs/en/toolkit/getting-started/install.md) before using that VSIX with runtime data from another revision. This repository contains documentation and Release assets; the automatically generated GitHub source archives are not the extension source.
-
-## What This Repository Distributes
-
-This repository publishes two independent products, each on its own tag prefix. Filter the [release list](https://github.com/hw-native-sys/pypto-tools/releases) by prefix to find the latest package for a product.
-
-| Product | Tag prefix | Asset | Documentation |
-|---|---|---|---|
-| PyPTO3 Toolkit extension | `v*` | VSIX | [User guide](./docs/en/toolkit/index.md) |
-| `task-submit` | `task-submit-v*` | `task-submit-<version>.tar.gz` and `.sha256` | [task-submit docs](./docs/en/task-submit/index.md) |
+The v1.0.2 Release lists its extension source commit and checked `simpler` runtime commits. See the [installation and compatibility notes](docs/en/toolkit/getting-started/install.md) before using that VSIX with runtime data from another revision. The automatically generated GitHub source archives are not the extension source.
 
 ## Key Features
 
