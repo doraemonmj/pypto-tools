@@ -15,7 +15,7 @@ This repository publishes two independent products, each on its own tag prefix. 
 | Product | Tag prefix | Asset | Documentation |
 |---|---|---|---|
 | PyPTO3 Toolkit extension | `v*` | VSIX | [User guide](./docs/en/toolkit/index.md) |
-| Task Queue (`task-submit`) | `task-submit-v*` | `task-submit-<version>.tar.gz` and `.sha256` | [Task Queue docs](./docs/en/task-queue/index.md) |
+| `task-submit` | `task-submit-v*` | `task-submit-<version>.tar.gz` and `.sha256` | [task-submit docs](./docs/en/task-submit/index.md) |
 
 ## Key Features
 

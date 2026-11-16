@@ -10,7 +10,7 @@
 
 ## 下载与校验
 
-1. 打开 [Task Queue Release 列表](https://github.com/hw-native-sys/pypto-tools/releases?q=task-submit-v&expanded=true)，
+1. 打开 [task-submit Release 列表](https://github.com/hw-native-sys/pypto-tools/releases?q=task-submit-v&expanded=true)，
    选择一个 `task-submit-v*` 发布。
 2. 下载 `task-submit-<version>.tar.gz` 和 `task-submit-<version>.tar.gz.sha256`。
 3. 校验并解压：

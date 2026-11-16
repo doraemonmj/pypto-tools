@@ -51,4 +51,4 @@ queue, submit it separately with `--no-device`.
 ## Next steps
 
 - [Install and upgrade](install.md)
-- [Task Queue overview](index.md)
+- [task-submit overview](index.md)

@@ -15,7 +15,7 @@ v1.0.2 Release 列出了插件源码提交和已检查的 `simpler` runtime 提�
 | 产品 | Tag 前缀 | 附件 | 文档 |
 |---|---|---|---|
 | PyPTO3 Toolkit 插件 | `v*` | VSIX | [用户文档](./docs/zh/toolkit/index.md) |
-| 任务队列（`task-submit`） | `task-submit-v*` | `task-submit-<version>.tar.gz` 和 `.sha256` | [任务队列文档](./docs/zh/task-queue/index.md) |
+| `task-submit` | `task-submit-v*` | `task-submit-<version>.tar.gz` 和 `.sha256` | [task-submit 文档](./docs/zh/task-submit/index.md) |
 
 ## 核心特性
 ### chip级任务记录：

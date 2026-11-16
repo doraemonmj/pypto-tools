@@ -31,7 +31,7 @@ PyPTO3 Toolkit v1.0.0 is a VS Code extension for PyPTO operator developers. This
 
 ## Related tools
 
-[Task Queue (task-submit)](../task-queue/index.md) is distributed from this repository on its own release line. It submits and runs NPU jobs on a shared Ascend host and is not part of the extension.
+[task-submit](../task-submit/index.md) is distributed from this repository on its own release line. It submits and runs NPU jobs on a shared Ascend host and is not part of the extension.
 
 ## Feedback
 

@@ -5,7 +5,7 @@ This repository distributes two independent products. Each has its own release l
 | Product | What it does | Documentation |
 |---|---|---|
 | **PyPTO3 Toolkit** | VS Code extension that visualizes PyPTO 3.0 runtime and compilation output | [Extension user guide](toolkit/index.md) |
-| **Task Queue** (`task-submit`) | Queue service that allocates NPU devices and runs jobs on a shared Ascend host | [Task Queue guide](task-queue/index.md) |
+| **task-submit** | Queue service that allocates NPU devices and runs jobs on a shared Ascend host | [task-submit guide](task-submit/index.md) |
 
 Neither product requires the other.
 
@@ -16,8 +16,8 @@ Release tags carry a product prefix; filter the [release list](https://github.co
 | Product | Tag prefix | Asset |
 |---|---|---|
 | PyPTO3 Toolkit | `v*` | VSIX |
-| Task Queue | `task-submit-v*` | `task-submit-<version>.tar.gz` and `.sha256` |
+| task-submit | `task-submit-v*` | `task-submit-<version>.tar.gz` and `.sha256` |
 
 ## Repository scope
 
-This repository holds documentation and Release assets. The extension source is maintained outside this repository; Task Queue is developed in [pypto-tools/npu-taskqueue](https://github.com/pypto-tools/npu-taskqueue). The source archives that GitHub generates automatically are not product sources.
+This repository holds documentation and Release assets. The extension source is maintained outside this repository; `task-submit` is developed in [pypto-tools/npu-taskqueue](https://github.com/pypto-tools/npu-taskqueue). The source archives that GitHub generates automatically are not product sources.

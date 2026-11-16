@@ -46,4 +46,4 @@ task-submit --device auto --run "python train.py --device \$TASK_DEVICE"
 ## 后续步骤
 
 - [安装与升级](install.md)
-- [任务队列概览](index.md)
+- [task-submit 概览](index.md)

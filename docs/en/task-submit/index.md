@@ -1,13 +1,12 @@
-# Task Queue (task-submit)
+# task-submit
 
-Task Queue submits and runs NPU jobs on a shared Ascend host. A root daemon
+`task-submit` submits and runs NPU jobs on a shared Ascend host. A root daemon
 keeps a queue, allocates and locks devices, and runs each job as the user who
-submitted it. The client command is `task-submit`; `pto-task` is an equivalent
-alias.
+submitted it. `pto-task` is an equivalent alias.
 
 > **Scope**
 >
-> Task Queue is distributed from this repository but is not part of the
+> `task-submit` is distributed from this repository but is not part of the
 > PyPTO3 Toolkit extension. Install it only on a shared Ascend host where the
 > queue service is administered.
 
@@ -25,8 +24,8 @@ alias.
 
 - The two products are independent: installing one does not install the other.
 - The extension reads runtime capture files such as `chip_swimlane_records.json`.
-  Task Queue is one way to run the workloads that produce those files.
-- Task Queue has its own release line (`task-submit-v*`) and its own source
+  `task-submit` is one way to run the workloads that produce those files.
+- `task-submit` has its own release line (`task-submit-v*`) and its own source
   repository, [pypto-tools/npu-taskqueue](https://github.com/pypto-tools/npu-taskqueue).
 
 ## Host requirements
@@ -41,7 +40,7 @@ alias.
 
 ## Releases and versions
 
-Task Queue releases use the `task-submit-v*` tag prefix, separately from the
+`task-submit` releases use the `task-submit-v*` tag prefix, separately from the
 extension's `v*` releases. Use the
 [filtered release list](https://github.com/hw-native-sys/pypto-tools/releases?q=task-submit-v&expanded=true)
 to find the latest package. If no `task-submit-v*` entry is listed, no package
