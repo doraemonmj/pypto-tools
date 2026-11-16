@@ -6,7 +6,7 @@ PyPTO3 Toolkit 是一款 PyPTO 3.0 框架全流程辅助工具，提供包括编
 
 > 面向 PyPTO 3.0 用户的完整使用说明请参阅 [PyPTO Toolkit 中文在线文档](https://www.pypto.ai/pypto-tools/zh/)。文档源码位于 [`docs/`](./docs/)，最新安装包请从 [Releases](https://github.com/hw-native-sys/pypto-tools/releases/latest) 下载。
 
-v1.0.2 Release 列出了插件源码提交和已检查的 `simpler` runtime 提交。使用其他提交生成的运行数据前，请查看[安装与兼容性说明](docs/zh/getting-started/install.md)。本仓库存放文档和 Release 附件；GitHub 自动生成的源码压缩包并不是插件源码。
+v1.0.2 Release 列出了插件源码提交和已检查的 `simpler` runtime 提交。使用其他提交生成的运行数据前，请查看[安装与兼容性说明](docs/zh/toolkit/getting-started/install.md)。本仓库存放文档和 Release 附件；GitHub 自动生成的源码压缩包并不是插件源码。
 
 ## 本仓库发布的产品
 
@@ -14,7 +14,7 @@ v1.0.2 Release 列出了插件源码提交和已检查的 `simpler` runtime 提�
 
 | 产品 | Tag 前缀 | 附件 | 文档 |
 |---|---|---|---|
-| PyPTO3 Toolkit 插件 | `v*` | VSIX | [用户文档](./docs/zh/index.md) |
+| PyPTO3 Toolkit 插件 | `v*` | VSIX | [用户文档](./docs/zh/toolkit/index.md) |
 | 任务队列（`task-submit`） | `task-submit-v*` | `task-submit-<version>.tar.gz` 和 `.sha256` | [任务队列文档](./docs/zh/task-queue/index.md) |
 
 ## 核心特性

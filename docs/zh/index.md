@@ -1,38 +1,23 @@
-# PyPTO3 Toolkit 用户文档
+# pypto-tools 文档
 
-PyPTO3 Toolkit v1.0.0 是面向 PyPTO 算子开发者的 VS Code 插件。本说明聚焦插件为 **PyPTO 3.0** 提供的运行时和编译过程可视化能力，帮助用户查看任务执行时序、分析任务依赖，并定位编译 Pass 带来的 IR 变化。
+本仓库分发两个相互独立的产品，各自有独立的发布线和独立的文档。
 
-## 主要能力
-
-| 分析对象 | 输入 | 用途 |
+| 产品 | 用途 | 文档 |
 |---|---|---|
-| Chip Swimlane | `chip_swimlane_records.json` | 查看 AICore Worker、AICPU Scheduler 和 Orchestrator 的运行时序 |
-| Serving Strace Swimlane | `serving-strace-swimlane.json` | 查看 Serving 任务时序，并按 `WorkerProcess` 汇总任务数量和耗时 |
-| 任务依赖图 | `deps.json` | 查看任务、Tensor、前后驱关系和冗余依赖 |
-| 函数性能表 | `name_map*.json` 和同目录泳道文件 | 按函数汇总执行次数及最大、最小、平均耗时 |
-| IR Pass Trace | `passes_dump*` 目录 | 对比连续编译 Pass 前后的 Python IR 快照 |
-| 内存复用分析 | pass dump 中的 `*after_AllocateMemoryAddr.py` 文件 | 从地址和生命周期两个维度查看片上内存布局与复用 |
+| **PyPTO3 Toolkit** | 可视化 PyPTO 3.0 运行时和编译输出的 VS Code 插件 | [插件用户文档](toolkit/index.md) |
+| **任务队列**（`task-submit`） | 在共享 Ascend 主机上分配 NPU 设备并运行任务的队列服务 | [任务队列文档](task-queue/index.md) |
 
-[安装插件](getting-started/install.md){ .md-button .md-button--primary }
-[快速上手](getting-started/quick-start.md){ .md-button }
+两个产品互不依赖。
 
-## 推荐分析顺序
+## 发布
 
-1. 从最新 [GitHub Release](https://github.com/hw-native-sys/pypto-tools/releases/latest) 下载并安装 VSIX。
-2. 将 PyPTO 3.0 运行生成的 `dfx_outputs` 和 `passes_dump*` 保留在 VS Code 工作区内。
-3. 先打开 `chip_swimlane_records.json` 定位耗时和调度阶段。
-4. 再打开同目录的 `deps.json` 检查任务依赖和冗余边。
-5. 如果输出中包含 `serving-strace-swimlane.json`，打开它以比较各 `WorkerProcess` 的任务数量和耗时。
-6. 需要分析内存复用时，直接打开匹配 `*after_AllocateMemoryAddr.py` 的文件，或从 Chip Swimlane 预览中点击 **openMemoryMap**。
+Release tag 带产品前缀。请在 [Release 列表](https://github.com/hw-native-sys/pypto-tools/releases) 中按前缀筛选，以找到某个产品的最新安装包。
 
-> **文档范围**
->
-> 本文只介绍 PyPTO 3.0 已接通并可供用户使用的功能。
+| 产品 | Tag 前缀 | 附件 |
+|---|---|---|
+| PyPTO3 Toolkit | `v*` | VSIX |
+| 任务队列 | `task-submit-v*` | `task-submit-<version>.tar.gz` 和 `.sha256` |
 
-## 相关工具
+## 仓库范围
 
-[任务队列（task-submit）](task-queue/index.md) 由本仓库独立发布，用于在共享 Ascend 主机上提交和运行 NPU 任务，不属于本插件。
-
-## 反馈
-
-如遇到问题，请在 [hw-native-sys/pypto-tools Issues](https://github.com/hw-native-sys/pypto-tools/issues) 中提交问题，并尽量附上插件版本、输入文件类型、复现步骤和错误信息。使用插件前请阅读仓库 [中文 README 中的免责声明](https://github.com/hw-native-sys/pypto-tools/blob/main/README.zh.md#免责声明)。
+本仓库存放文档和 Release 附件。插件源码不在本仓库维护；任务队列的源码仓库是 [pypto-tools/npu-taskqueue](https://github.com/pypto-tools/npu-taskqueue)。GitHub 自动生成的源码压缩包并不是产品源码。
